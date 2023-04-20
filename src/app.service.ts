@@ -31,7 +31,7 @@ export class AppService {
 
     // IMPORTANT: Hardcoded markup since Linkedin is blocking the scraping even via proxy.
 
-    const markup2 = `
+    const markup = `
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7141,7 +7141,7 @@ So I created…
 </html>
     `;
 
-    const markup = `
+    const markup2 = `
     <!DOCTYPE html>
     
         
