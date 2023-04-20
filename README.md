@@ -1,3 +1,6 @@
+![pre-interview-brief](https://user-images.githubusercontent.com/27579184/233307058-7bc01779-30c5-46fd-963e-3475281908b5.jpg)
+
+
 ## Description
 
 ## Use case
