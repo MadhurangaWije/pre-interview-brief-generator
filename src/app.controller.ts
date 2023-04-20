@@ -8,6 +8,11 @@ import { createMachine, interpret } from 'xstate';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  @Get('/health')
+  healthCheck(): string {
+    return this.appService.healthCheck();
+  }
+
   @Post('brief-sync')
   async getScrape(@Body() dto: InterviewBriefRequestDto): Promise<any> {
     return await this.appService.generatePreInterviewBriefSync(dto);

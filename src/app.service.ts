@@ -13,6 +13,9 @@ import { InterviewBriefRequestDto } from './InterviewBriefRequestDto';
 
 @Injectable()
 export class AppService {
+  healthCheck(): string {
+    return 'OK';
+  }
 
   constructor(@InjectQueue(TRANSCODE_QUEUE) private readonly transcodeQueue: Queue, private readonly httpService: HttpService){}
 
