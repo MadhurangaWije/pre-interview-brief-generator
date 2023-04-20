@@ -13,7 +13,7 @@ export class AppController {
     return this.appService.healthCheck();
   }
 
-  @Post('/brief-sync')
+  @Post('/brief')
   async getScrape(@Body() dto: InterviewBriefRequestDto): Promise<any> {
     return await this.appService.generatePreInterviewBriefSync(dto);
   }
