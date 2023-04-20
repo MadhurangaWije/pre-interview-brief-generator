@@ -20,6 +20,14 @@ When a candidate applies for a job, they’d like to learn more about the person
 - Assume that the starting point of your application is a webhook calling with an email subject and body from a service like SendGrid.
 - This is a tool/ service/ product used by candidates, and you are going to charge them $5 in the future. This tool is not how you apply for a job.
 
+## Completed tasks.
+- Backend API which process the request and generate brief with OpenAI models.
+
+## Pending tasks
+- Email trigger integration
+- Scraping (this is a blocker as linkedin limitations on scraping)
+- state machine and queue based asynchronous processing
+
 ## Installation
 
 ```bash
