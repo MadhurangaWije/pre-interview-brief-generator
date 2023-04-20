@@ -13,12 +13,12 @@ export class AppController {
     return this.appService.healthCheck();
   }
 
-  @Post('brief-sync')
+  @Post('/brief-sync')
   async getScrape(@Body() dto: InterviewBriefRequestDto): Promise<any> {
     return await this.appService.generatePreInterviewBriefSync(dto);
   }
 
-  @Post('brief-async')
+  @Post('/brief-async')
   async getScrapeAsync(@Body() dto: InterviewBriefRequestDto): Promise<any> {
     const machine = createMachine({
       id: 'taskMachine',
