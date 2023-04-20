@@ -36,7 +36,7 @@ $ npm run start
 - Linkedin profile page cannot be scraped as Linkedin has taken several measures to block it.
 
 # Request payload structure
-POST http://localhost:3030/brief-sync
+POST pre-interview-brief-generator-production.up.railway.app/brief
 
 {
     "companyProfileUrl": "https://www.linkedin.com/company/aristotlehq/about/",
